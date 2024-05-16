@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro no Sorteio</title>
+
+    <style>
+        /* Adicione o estilo diretamente aqui */
+        .back-to-home {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #3498db; /* Cor de fundo do botão */
+            color: #fff; /* Cor do texto do botão */
+            border: 1px solid #3498db; /* Borda do botão */
+            border-radius: 5px; /* Cantos arredondados */
+            transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+
+            /* Estilos adicionais para melhorar a aparência */
+            cursor: pointer;
+        }
+
+        /* Altera a cor de fundo quando o mouse passa sobre o botão */
+        .back-to-home:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogadores com status pendente</h1>
+    <p>{{ mensagem_erro }}</p>
+
+    <!-- Botão de voltar à página inicial -->
+    <a class="back-to-home" href="/">Voltar ao Elenco</a>
+
+    <!-- Seu conteúdo HTML aqui -->
+</body>
+</html>

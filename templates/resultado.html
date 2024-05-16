@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Sorteio</title>
+    <style>
+        .time1-table {
+            width: 18%;
+            border-collapse: collapse;
+            align-items: center;
+            background-color: #fbf2ff; /* Cor de fundo para o Time 1 */
+           font-size: 12px;
+           color: black;
+        }
+
+        .time2-table {
+            width: 18%;
+            border-collapse: collapse;
+            align-items: center;
+            background-color: hsl(203, 100%, 97%); /* Cor de fundo para o Time 2 */
+            font-size: 12px;
+            color: black;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 5px;
+        }
+
+        th.cabecalho1 {
+            background-color: rgb(248, 227, 255); /* Cor de fundo para o cabeçalho do Time 1 */
+            color: black; /* Cor do texto no cabeçalho do Time 1 */
+        }
+
+        th.cabecalho2 {
+            background-color: hsl(204, 100%, 92%); /* Cor de fundo para o cabeçalho do Time 2 */
+            color: black; /* Cor do texto no cabeçalho do Time 2 */
+        }
+
+        .porcentagens {
+            color: rgb(0, 0, 0);
+            padding-top: 0%;
+            padding: 0%;
+            font-size: 12px;
+            margin: 2px;
+        }
+     
+        .titulotime1{
+            font-size: 15px;
+        }
+        .titulotime2{
+            font-size: 15px;
+        }
+       
+        h2,
+        strong {
+            margin: 0px;
+            
+        }
+
+        hr {
+            border: 5px solid #49695d;
+            margin: 5px 0;
+        }
+        .soma{
+            margin: 0;
+        }
+        p{
+            margin: 0px;
+        }
+        h1{
+            background-color: #000000;
+            color: white;
+            margin: 0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Resultado do Sorteio</h1>
+
+    <h2 class="titulotime1">Time Rosa</h2>
+    <p><strong class="soma">Somatório de Níveis: {{ resultado_sorteio.somatorio_niveis_time1 }}</strong></p>
+    <div class="porcentagens">
+        <p>Defensivo: {{ resultado_sorteio.porcentagem_goleiros_zagueiros_time1 }}%</p>
+        <p>Criação: {{ resultado_sorteio.porcentagem_meia_time1 }}%</p>
+        <p>Ofensivo: {{ resultado_sorteio.porcentagem_atacante_time1 }}%</p>
+    </div>
+    <table class="time1-table">
+        <thead>
+            <tr>
+                <th class="cabecalho1">Nome</th>
+                <th class="cabecalho1">Posição</th>
+                <!--<th class="cabecalho1">Nível</th> exibe a coluna nível do time 1 -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for jogador in resultado_sorteio.time1 | sort(attribute='posicao') %}
+            <tr>
+                <td>{{ jogador.nome }}</td>
+                <td>{{ jogador.posicao }}</td>
+                <!--<td>{{ jogador.nivel }}</td>    exibi o nivel de cada jogador-->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2 class="titulotime2">Time Azul</h2>
+    <p ><strong class="soma">Somatório de Níveis: {{ resultado_sorteio.somatorio_niveis_time2 }}</strong></p>
+    <div class="porcentagens">
+        <p>Defensivo: {{ resultado_sorteio.porcentagem_goleiros_zagueiros_time2 }}%</p>
+        <p>Criação: {{ resultado_sorteio.porcentagem_meia_time2 }}%</p>
+        <p>Ofensivo: {{ resultado_sorteio.porcentagem_atacante_time2 }}%</p>
+    </div>
+    <table class="time2-table">
+        <thead>
+            <tr>
+                <th class="cabecalho2">Nome</th>
+                <th class="cabecalho2">Posição</th>
+                <!--<th class="cabecalho2">Nível</th> exibe a coluna nível do time 2 -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for jogador in resultado_sorteio.time2 | sort(attribute='posicao') %}
+            <tr>
+                <td>{{ jogador.nome }}</td>
+                <td>{{ jogador.posicao }}</td>
+                <!--<td>{{ jogador.nivel }}</td>    exibe o nivel de cada jogador do time 2-->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

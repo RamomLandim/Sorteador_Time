@@ -1,0 +1,59 @@
+body {
+  position: relative;
+  color: #02051b;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT4W6OxOZIA1CpY1nRkX_6blfjXkQbAslTHh-dZGc2JoxyUbfvDRUYA2fXvG8dFAWFr04&usqp=CAU");
+  background-size: cover;
+  opacity: 0.3;
+}
+
+img {
+  float: left;
+  margin-right: 10px;
+  width: 2cm;
+  height: 2cm;
+  border-radius: 50%;
+  box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.pendente {
+  background-color: #f4f476;
+}
+
+.fora {
+  background-color: #ff7575;
+}
+
+.dentro {
+  background-color: #3bb03b;
+}
+
+.marca {
+  padding-left: 50px;
+  padding-bottom: 50px;
+  float: center;
+  text-align: center;
+  font-size: 10px;
+  display: inline;
+}
+
+h1 {
+  display: inline;
+  margin-left: 20px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

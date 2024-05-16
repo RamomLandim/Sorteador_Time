@@ -1,0 +1,146 @@
+[
+  {
+    "nome": "Gol.Bruno",
+    "nivel": 10,
+    "posicao": "Goleiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "Gol.Kid",
+    "nivel": 10,
+    "posicao": "Goleiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "DATO",
+    "nivel": 5,
+    "posicao": "Atacante",
+    "status": "dentro"
+  },
+  {
+    "nome": "BILA",
+    "nivel": 8,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "ALAN",
+    "nivel": 7,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "PABLO",
+    "nivel": 2,
+    "posicao": "Atacante",
+    "status": "dentro"
+  },
+  {
+    "nome": "ADIR",
+    "nivel": 5,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "JUNIOR",
+    "nivel": 6,
+    "posicao": "Zagueiro",
+    "status": "fora"
+  },
+  {
+    "nome": "JONATHAN",
+    "nivel": 5,
+    "posicao": "Atacante",
+    "status": "dentro"
+  },
+  {
+    "nome": "VENiCIO",
+    "nivel": 5,
+    "posicao": "Atacante",
+    "status": "fora"
+  },
+  {
+    "nome": "EDE",
+    "nivel": 5,
+    "posicao": "Meia",
+    "status": "fora"
+  },
+  {
+    "nome": "HENRIQUE",
+    "nivel": 8,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "MOZART",
+    "nivel": 7,
+    "posicao": "Zagueiro",
+    "status": "fora"
+  },
+  {
+    "nome": "NILSON",
+    "nivel": 8,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "WILL",
+    "nivel": 6,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "BRUNO",
+    "nivel": 8,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "MATHEUS C.",
+    "nivel": 8,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "FABIO",
+    "nivel": 1,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "FELIPE",
+    "nivel": 8,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "MATHEUS M.",
+    "nivel": 1,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "VINI RODIS",
+    "nivel": 5,
+    "posicao": "Atacante",
+    "status": "dentro"
+  },
+  {
+    "nome": "HULK",
+    "nivel": 5,
+    "posicao": "Atacante",
+    "status": "fora"
+  },
+  {
+    "nome": "RUBENS",
+    "nivel": 2,
+    "posicao": "Atacante",
+    "status": "fora"
+  },
+  {
+    "nome": "GABRIEL",
+    "nivel": 2,
+    "posicao": "Atacante",
+    "status": "dentro"
+  }
+]

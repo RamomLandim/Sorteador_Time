@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href='style.css'>
+    <meta charset="UTF-8">
+    <img src="/static/logo.jpg" alt="logo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELITE FC</title>
+    <style>
+        .pendente { background-color: #f4f476; }   <!--Amarelo-->
+        .fora { background-color: #ff7575; }       <!--Vermelho-->
+        .dentro { background-color: #3bb03b; }     <!--Verde-->
+    </style>
+</head>
+<body>
+    <body>
+        <h1>ELITE FC</h1>
+        <h3 class="marca">dato®</h3>
+    </body>   
+    <h2>Contratar Jogador</h2>
+    <form method="POST" action="/">
+        <label>Nome:
+            <input type="text" name="nome" required>
+        </label>
+        <label>Posição:
+            <select name="posicao" required>
+                <option value="Zagueiro">Zagueiro</option>
+                <option value="Meia">Meia</option>
+                <option value="Atacante">Atacante</option>
+            </select>
+        </label>
+      <br>
+        <label>Nível:
+            <input type="number" name="nivel" min="0" max="10" required>
+        </label>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Elenco</h2>
+      <form method="POST" action="{{ url_for('resetar_status') }}">
+        <button type="submit" name="resetar_status">Resetar Status</button>
+    </form>
+
+    <form method="POST" action="{{ url_for('sortear') }}">
+        <button type="submit" name="sortear_times">Sortear Times</button>
+    </form>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Posição</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+        {% for jogador in jogadores %}
+        <tr>
+            <td>{{ jogador.nome|upper }}</td>
+            <td>{{ jogador.posicao }}</td>
+            <td class="{{ jogador.status }}">{{ jogador.status }}</td>
+            <td>
+                {% if jogador.status == 'pendente' %}
+                <form method="POST" action="{{ url_for('mudar_status', nome=jogador.nome) }}">
+                    <select name="novo_status">
+                        <option value="dentro">dentro</option>
+                        <option value="fora">fora</option>
+                    </select>
+                    <button type="submit">Confirmar</button>
+                </form>
+                {% else %}
+                <form method="POST" action="{{ url_for('mudar_status', nome=jogador.nome) }}">
+                    <select name="novo_status">
+                        <option value="pendente">Pendente</option>
+                        <option value="fora" {% if jogador.status == 'fora' %}selected{% endif %}>Fora</option>
+                    </select>
+                    <button type="submit">Alterar</button>
+                </form>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+</body>
+</html>
