@@ -1,158 +1,158 @@
 [
   {
-    "nome": "Gol 1",
+    "nome": "Samuel",
     "nivel": 10,
     "posicao": "Goleiro",
     "status": "dentro"
   },
   {
-    "nome": "Gol 2",
-    "nivel": 10,
-    "posicao": "Goleiro",
-    "status": "dentro"
-  },
-  {
-    "nome": "Gol 3",
-    "nivel": 10,
-    "posicao": "Goleiro",
-    "status": "fora"
-  },
-  {
-    "nome": "Gol 4",
-    "nivel": 10,
-    "posicao": "Goleiro",
-    "status": "fora"
-  },
-  {
-    "nome": "Zagueiro 1",
-    "nivel": 5,
-    "posicao": "Zagueiro",
-    "status": "fora"
-  },
-  {
-    "nome": "Zagueiro 2",
-    "nivel": 8,
-    "posicao": "Zagueiro",
-    "status": "fora"
-  },
-  {
-    "nome": "Zagueiro 3",
+    "nome": "Felipe",
     "nivel": 7,
-    "posicao": "Zagueiro",
+    "posicao": "Goleiro",
     "status": "dentro"
   },
   {
-    "nome": "Zagueiro 4",
-    "nivel": 2,
-    "posicao": "Zagueiro",
+    "nome": "Anderson",
+    "nivel": 10,
+    "posicao": "Goleiro",
     "status": "dentro"
   },
   {
-    "nome": "Zagueiro 5",
+    "nome": "Renato",
     "nivel": 5,
-    "posicao": "Zagueiro",
+    "posicao": "Goleiro",
     "status": "dentro"
   },
   {
-    "nome": "Meia 1",
-    "nivel": 6,
-    "posicao": "Meia",
-    "status": "fora"
-  },
-  {
-    "nome": "Meia 2",
-    "nivel": 5,
-    "posicao": "Meia",
-    "status": "fora"
-  },
-  {
-    "nome": "Meia 3",
-    "nivel": 5,
-    "posicao": "Meia",
-    "status": "fora"
-  },
-  {
-    "nome": "Meia 4",
-    "nivel": 5,
-    "posicao": "Meia",
-    "status": "fora"
-  },
-  {
-    "nome": "Meia 5",
-    "nivel": 8,
-    "posicao": "Meia",
-    "status": "dentro"
-  },
-  {
-    "nome": "Meia 6",
+    "nome": "Thailan",
     "nivel": 7,
     "posicao": "Meia",
     "status": "dentro"
   },
   {
-    "nome": "Meia 7",
-    "nivel": 8,
+    "nome": "Carlinho",
+    "nivel": 5,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "Renan",
+    "nivel": 9,
     "posicao": "Meia",
     "status": "dentro"
   },
   {
-    "nome": "Atacante 1",
+    "nome": "Flavio",
     "nivel": 6,
     "posicao": "Atacante",
     "status": "dentro"
   },
   {
-    "nome": "Atacante 2",
-    "nivel": 8,
-    "posicao": "Atacante",
+    "nome": "Eduardo",
+    "nivel": 6,
+    "posicao": "Zagueiro",
     "status": "dentro"
   },
   {
-    "nome": "Atacante 3",
-    "nivel": 8,
-    "posicao": "Atacante",
-    "status": "dentro"
-  },
-  {
-    "nome": "Atacante 4",
-    "nivel": 1,
-    "posicao": "Atacante",
-    "status": "dentro"
-  },
-  {
-    "nome": "Atacante 5",
-    "nivel": 8,
-    "posicao": "Atacante",
-    "status": "fora"
-  },
-  {
-    "nome": "Atacante 6",
-    "nivel": 1,
-    "posicao": "Atacante",
-    "status": "fora"
-  },
-  {
-    "nome": "Atacante 7",
+    "nome": "Kaio",
     "nivel": 5,
-    "posicao": "Atacante",
-    "status": "fora"
+    "posicao": "Zagueiro",
+    "status": "dentro"
   },
   {
-    "nome": "Atacante 8",
+    "nome": "Douglas",
+    "nivel": 9,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "Thiago",
+    "nivel": 8,
+    "posicao": "Atacante",
+    "status": "dentro"
+  },
+  {
+    "nome": "Vinicius",
+    "nivel": 9,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "Tadeu",
     "nivel": 5,
-    "posicao": "Atacante",
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "Cristian",
+    "nivel": 7,
+    "posicao": "Zagueiro",
     "status": "fora"
   },
   {
-    "nome": "Atacante 9",
-    "nivel": 2,
-    "posicao": "Atacante",
+    "nome": "Andre",
+    "nivel": 6,
+    "posicao": "Zagueiro",
     "status": "fora"
   },
   {
-    "nome": "Atacante 10",
-    "nivel": 2,
+    "nome": "Tiago",
+    "nivel": 6,
     "posicao": "Atacante",
-    "status": "fora"
+    "status": "dentro"
+  },
+  {
+    "nome": "Gabriel",
+    "nivel": 9,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "Elvis",
+    "nivel": 7,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "Luiz Felipe",
+    "nivel": 9,
+    "posicao": "Atacante",
+    "status": "dentro"
+  },
+  {
+    "nome": "Marcelo",
+    "nivel": 9,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "Ozeas",
+    "nivel": 3,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "Bruno",
+    "nivel": 7,
+    "posicao": "Zagueiro",
+    "status": "dentro"
+  },
+  {
+    "nome": "Felipe",
+    "nivel": 9,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "Ramom",
+    "nivel": 8,
+    "posicao": "Meia",
+    "status": "dentro"
+  },
+  {
+    "nome": "Lucas",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "dentro"
   }
 ]

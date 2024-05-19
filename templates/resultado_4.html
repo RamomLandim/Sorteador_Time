@@ -165,6 +165,31 @@
             {% endfor %}
         </tbody>
     </table>
+    <h2 class="titulotime2">Time 4</h2>
+    <p ><strong class="soma">Somatório de Níveis: {{ resultado_sorteio.somatorio_niveis_time4 }}</strong></p>
+    <div class="porcentagens">
+        <p>Defensivo: {{ resultado_sorteio.porcentagem_goleiros_zagueiros_time4 }}%</p>
+        <p>Criação: {{ resultado_sorteio.porcentagem_meia_time4 }}%</p>
+        <p>Ofensivo: {{ resultado_sorteio.porcentagem_atacante_time4 }}%</p>
+    </div>
+    <table class="time2-table">
+        <thead>
+            <tr>
+                <th class="cabecalho2">Nome</th>
+                <th class="cabecalho2">Posição</th>
+                <!--<th class="cabecalho2">Nível</th> exibe a coluna nível do time 2 -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for jogador in resultado_sorteio.time4 | sort(attribute='posicao') %}
+            <tr>
+                <td>{{ jogador.nome }}</td>
+                <td>{{ jogador.posicao }}</td>
+                <!--<td>{{ jogador.nivel }}</td>    exibe o nivel de cada jogador do time 2-->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 
 </html>
