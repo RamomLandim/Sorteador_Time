@@ -6,10 +6,10 @@
     "status": "dentro"
   },
   {
-    "nome": "Felipe",
+    "nome": "Felipe Gol",
     "nivel": 7,
     "posicao": "Goleiro",
-    "status": "dentro"
+    "status": "fora"
   },
   {
     "nome": "Anderson",
@@ -33,7 +33,7 @@
     "nome": "Carlinho",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "fora"
   },
   {
     "nome": "Renan",
@@ -69,13 +69,13 @@
     "nome": "Thiago",
     "nivel": 8,
     "posicao": "Atacante",
-    "status": "dentro"
+    "status": "pendente"
   },
   {
     "nome": "Vinicius",
     "nivel": 9,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "pendente"
   },
   {
     "nome": "Tadeu",
@@ -87,13 +87,13 @@
     "nome": "Cristian",
     "nivel": 7,
     "posicao": "Zagueiro",
-    "status": "fora"
+    "status": "dentro"
   },
   {
     "nome": "Andre",
     "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "fora"
+    "status": "dentro"
   },
   {
     "nome": "Tiago",
@@ -129,13 +129,13 @@
     "nome": "Ozeas",
     "nivel": 3,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "pendente"
   },
   {
     "nome": "Bruno",
     "nivel": 7,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "fora"
   },
   {
     "nome": "Felipe",

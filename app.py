@@ -44,41 +44,6 @@ def adicionar_jogador(nome, nivel, posicao):
   })
   salvar_jogadores(jogadores)
 
-# def sortear_times(jogadores):
-#   # Dividir jogadores por posição
-#   goleiros = [jogador for jogador in jogadores 
-#                 if jogador['posicao'] == 'goleiro'
-#   ]
-#   print (goleiros)
-#   outros_jogadores = [
-#       jogador for jogador in jogadores if jogador['posicao'] != 'goleiro'
-#   ]
-#   # Garantir que os goleiros não caiam no mesmo time
-#   random.shuffle(goleiros)
-#   meio_goleiros = len(goleiros) // 2
-#   goleiros_time1 = goleiros[:meio_goleiros]
-#   goleiros_time2 = goleiros[meio_goleiros:]
-
-#   # Sortear os outros jogadores de forma equilibrada
-#   random.shuffle(outros_jogadores)
-#   meio_outros = len(outros_jogadores) // 2
-#   outros_time1 = outros_jogadores[:meio_outros]
-#   outros_time2 = outros_jogadores[meio_outros:]
-
-#   time1 = goleiros_time1 + outros_time1
-#   time2 = goleiros_time2 + outros_time2
-
-#   # Calcular somatório dos níveis para cada time
-#   somatorio_niveis_time1 = sum(jogador['nivel'] for jogador in time1)
-#   somatorio_niveis_time2 = sum(jogador['nivel'] for jogador in time2)
-
-#   return {
-#       "time1": time1,
-#       "time2": time2,
-#       "somatorio_niveis_time1": somatorio_niveis_time1,
-#       "somatorio_niveis_time2": somatorio_niveis_time2
-#   }
-
 def realizar_sorteio():
     jogadores = carregar_jogadores()
 
@@ -95,14 +60,11 @@ def realizar_sorteio():
            jogador for jogador in jogadores if jogador['status'] == 'dentro' and jogador['posicao'] == 'Goleiro'
         ]
 
-        # Ordenar jogadores por posição desejada
-        posicoes_desejadas = ['Goleiro', 'Zagueiro', 'Meia', 'Atacante']
-
         # Ordena jogadores por nível (do maior para o menor)
-        jogadores_dentro.sort(
-            key=lambda x: (posicoes_desejadas.index(x['posicao']), x['nivel']))
+        jogadores_dentro.sort(key=lambda x: (x['nivel']), reverse=True)
         
         random.shuffle(jogadores_dentro)
+        random.shuffle(goleiro_dentro)
 
         for i in reversed(goleiro_dentro):
           jogadores_dentro.insert(0,i)
@@ -115,17 +77,39 @@ def realizar_sorteio():
         elif numero_jogadores >=15:
            num_times = 4
 
-        # Dividir jogadores por nota e posição
-        #jogadores_dentro.sort(key=lambda x: (x['nivel'], x['posicao']))
-
         # Dividir jogadores em mnos times, garantindo equilíbrio nas notas e posições
         time1 = ""
         time2 = ""
         time3 = ""
         time4 = ""
+        
+        somas = [0 for _ in range(num_times)]
         if num_times == 2:
-          time1 = jogadores_dentro[::2]
-          time2 = jogadores_dentro[1::2]
+          somas = [0 for _ in range(2)]
+          grupos = [[],[]]
+          
+          index = 0
+          while index < len(jogadores_dentro):
+            # Encontrar o grupo com a menor soma atual
+            indice_grupo = somas.index(min(somas))
+            # Adicionar a pessoa ao grupo e atualizar a soma
+            pessoa = jogadores_dentro[index]
+            grupos[indice_grupo].append(pessoa)
+            somas[indice_grupo] += pessoa["nivel"]
+            # Incrementar o índice
+            index += 1
+
+          time1 = grupos[0]
+          time2 = grupos[1]
+
+          if len(time1)>6:
+            time1.sort(key=lambda x: (x['nivel'], x['posicao']))
+            if time1[len(time1)-1]['posicao'] == 'Goleiro':
+              time2.append(time1[len(time1)-2])
+              time1.pop(len(time1)-2)
+            else:
+              time2.append(time1[len(time1)-1])
+              time1.pop(len(time1)-1)
 
           somatorio_niveis_time1 = sum(jogador['nivel'] for jogador in time1)
           somatorio_niveis_time2 = sum(jogador['nivel'] for jogador in time2)
@@ -146,27 +130,46 @@ def realizar_sorteio():
           "porcentagem_atacante_time2": porcentagem_atacante_time2
           }
         elif num_times == 3:
-          time1 = jogadores_dentro[::3]
-          time2 = jogadores_dentro[1::3]
-          time3 = jogadores_dentro[2::3]
+          somas = [0 for _ in range(3)]
+          grupos = [[] for _ in range(3)]
+          
+          index = 0
+          while index < len(jogadores_dentro):
+            # Encontrar o grupo com a menor soma atual
+            indice_grupo = somas.index(min(somas))
+            # Adicionar a pessoa ao grupo e atualizar a soma
+            pessoa = jogadores_dentro[index]
+            grupos[indice_grupo].append(pessoa)
+            somas[indice_grupo] += pessoa["nivel"]
+            # Incrementar o índice
+            index += 1
 
-          if len(time1)<6:
-            time3.sort(key=lambda x: (x['nivel'], x['posicao']))
-            if time3[len(time3)-1]['posicao'] == 'Goleiro':
-              time1.append(time3[len(time3)-2])
-              time3.pop(len(time3)-2)
-            else:
-              time1.append(time3[len(time3)-1])
-              time3.pop(len(time3)-1)
+          time1 = grupos[0]
+          time2 = grupos[1]
+          time3 = grupos[2]
 
-          if len(time2)<6:
-            time3.sort(key=lambda x: (x['nivel'], x['posicao']))
-            if time3[len(time3)-1]['posicao'] == 'Goleiro':
-              time2.append(time3[len(time3)-2])
-              time3.pop(len(time3)-2)
-            else:
-              time2.append(time3[len(time3)-1])
-              time3.pop(len(time3)-1)
+          index = 0
+          while index <6:
+            if len(time1)<6:
+              time3.sort(key=lambda x: (x['nivel'], x['posicao']))
+              if time3[len(time3)-1]['posicao'] == 'Goleiro':
+                time1.append(time3[len(time3)-2])
+                time3.pop(len(time3)-2)
+              else:
+                time1.append(time3[len(time3)-1])
+                time3.pop(len(time3)-1)
+            index = len(time1)
+          
+          while index <6:
+            if len(time2)<6:
+              time3.sort(key=lambda x: (x['nivel'], x['posicao']))
+              if time3[len(time3)-1]['posicao'] == 'Goleiro':
+                time2.append(time3[len(time3)-2])
+                time3.pop(len(time3)-2)
+              else:
+                time2.append(time3[len(time3)-1])
+                time3.pop(len(time3)-1)
+            index = len(time2)
              
 
           somatorio_niveis_time1 = sum(jogador['nivel'] for jogador in time1)
@@ -195,30 +198,61 @@ def realizar_sorteio():
           "porcentagem_atacante_time3": porcentagem_atacante_time3
           }
         else:
-          time1 = jogadores_dentro[::4]
-          time2 = jogadores_dentro[1::4]
-          time3 = jogadores_dentro[2::4]
-          time4 = jogadores_dentro[3::4]
+          somas = [0 for _ in range(4)]
+          grupos = [[] for _ in range(4)]
+          
+          index = 0
+          while index < len(jogadores_dentro):
+            # Encontrar o grupo com a menor soma atual
+            indice_grupo = somas.index(min(somas))
+            # Adicionar a pessoa ao grupo e atualizar a soma
+            pessoa = jogadores_dentro[index]
+            grupos[indice_grupo].append(pessoa)
+            somas[indice_grupo] += pessoa["nivel"]
+            # Incrementar o índice
+            index += 1
+          
+          time1 = grupos[0]
+          time2 = grupos[1]
+          time3 = grupos[2]
+          time4 = grupos[3]
+          
+          time1, time2 = recalcula_grupo(time1,time2)
+          time2, time3 = recalcula_grupo(time2,time3)
+          time3, time4 = recalcula_grupo(time3,time4)
 
-          if len(time1)<6:
-            time4.sort(key=lambda x: (x['nivel'], x['posicao']))
-            if time4[len(time4)-1]['posicao'] == 'Goleiro':
-              time1.append(time4[len(time4)-2])
-              time4.pop(len(time4)-2)
-            else:
-              time1.append(time4[len(time4)-1])
-              time4.pop(len(time4)-1)
+          index = len(time1)
+          while index <6:
+            if len(time1)<6:
+              time4.sort(key=lambda x: (x['nivel'], x['posicao']))
+              if time4[len(time4)-1]['posicao'] == 'Goleiro':
+                time1.append(time4[len(time4)-2])
+                time4.pop(len(time4)-2)
+              else:
+                time1.append(time4[len(time4)-1])
+                time4.pop(len(time4)-1)
+            elif len(time1)>6:
+              time4.append(time1[len(time1)-1])
+              time1.pop(len(time1)-1)
+            index = len(time1)
 
-          if len(time2)<6:
-            time4.sort(key=lambda x: (x['nivel'], x['posicao']))
-            if time4[len(time4)-1]['posicao'] == 'Goleiro':
-              time2.append(time4[len(time4)-2])
-              time4.pop(len(time4)-2)
-            else:
-              time2.append(time4[len(time4)-1])
-              time4.pop(len(time4)-1)
+          index = len(time2)
+          while index <6:
+            if len(time2)<6:
+              time4.sort(key=lambda x: (x['nivel'], x['posicao']))
+              if time4[len(time4)-1]['posicao'] == 'Goleiro':
+                time2.append(time4[len(time4)-2])
+                time4.pop(len(time4)-2)
+              else:
+                time2.append(time4[len(time4)-1])
+                time4.pop(len(time4)-1)
+            elif len(time2)>6:
+              time4.append(time2[len(time2)-1])
+              time2.pop(len(time2)-1)
+            index = len(time2)
 
-          if len(goleiro_dentro)!=2:
+          index = len(time3)
+          while index <6:
             if len(time3)<6:
               time4.sort(key=lambda x: (x['nivel'], x['posicao']))
               if time4[len(time4)-1]['posicao'] == 'Goleiro':
@@ -227,6 +261,7 @@ def realizar_sorteio():
               else:
                 time3.append(time4[len(time4)-1])
                 time4.pop(len(time4)-1)
+            index = len(time2)
 
           somatorio_niveis_time1 = sum(jogador['nivel'] for jogador in time1)
           somatorio_niveis_time2 = sum(jogador['nivel'] for jogador in time2)
@@ -262,6 +297,43 @@ def realizar_sorteio():
           }
 
         return times_sorteados, None, num_times
+
+def recalcula_grupo(time1,time2):
+  tamanho1 = len(time1)
+  tamanho2 = len(time2)
+
+  if tamanho1 == tamanho2:
+    print("times com mesmo numero")
+
+  elif tamanho1 < tamanho2:
+    i = 0
+    index = tamanho2 - tamanho1
+    while i < index:
+      time2.sort(key=lambda x: (x['nivel'], x['posicao']))
+      if time2[len(time2)-1]['posicao'] == 'Goleiro':
+          time1.append(time2[len(time2)-2])
+          time2.pop(len(time2)-2)
+      else:
+          time1.append(time2[len(time2)-1])
+          time2.pop(len(time2)-1)
+      i+=1
+
+  elif  tamanho2 < tamanho1:
+    i = 0
+    index = tamanho1 - tamanho2
+    while i < index:
+      time1.sort(key=lambda x: (x['nivel'], x['posicao']))
+      if time1[len(time1)-1]['posicao'] == 'Goleiro':
+          time2.append(time1[len(time1)-2])
+          time1.pop(len(time1)-2)
+      else:
+          time2.append(time1[len(time1)-1])
+          time1.pop(len(time1)-1)
+      i+=1
+
+  return time1,time2
+
+
 
 def criar_grupos(jogadores, tamanho_grupo=6):
     grupos = [[] for _ in range((len(jogadores) + tamanho_grupo - 1) // tamanho_grupo)]

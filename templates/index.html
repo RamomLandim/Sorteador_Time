@@ -62,6 +62,7 @@
                     <select name="novo_status">
                         <option value="dentro">dentro</option>
                         <option value="fora">fora</option>
+                        <option value="fora">Pendente</option>
                     </select>
                     <button type="submit">Confirmar</button>
                 </form>
@@ -69,7 +70,8 @@
                 <form method="POST" action="{{ url_for('mudar_status', nome=jogador.nome) }}">
                     <select name="novo_status">
                         <option value="pendente">Pendente</option>
-                        <option value="fora" {% if jogador.status == 'fora' %}selected{% endif %}>Fora</option>
+                        <option value="dentro">dentro</option>
+                        <option value="fora">fora</option>
                     </select>
                     <button type="submit">Alterar</button>
                 </form>

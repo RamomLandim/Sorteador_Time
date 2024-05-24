@@ -15,7 +15,7 @@
            color: black;
         }
 
-        .time2-table {
+        .time2-table, .time1-table {
             width: 18%;
             border-collapse: collapse;
             align-items: center;
@@ -36,7 +36,7 @@
             color: black; /* Cor do texto no cabeçalho do Time 1 */
         }
 
-        th.cabecalho2 {
+        th.cabecalho2, th.cabecalho1 {
             background-color: hsl(204, 100%, 92%); /* Cor de fundo para o cabeçalho do Time 2 */
             color: black; /* Cor do texto no cabeçalho do Time 2 */
         }
@@ -165,6 +165,9 @@
             {% endfor %}
         </tbody>
     </table>
+    
+    <hr>
+
     <h2 class="titulotime2">Time 4</h2>
     <p ><strong class="soma">Somatório de Níveis: {{ resultado_sorteio.somatorio_niveis_time4 }}</strong></p>
     <div class="porcentagens">
