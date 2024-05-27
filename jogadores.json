@@ -3,156 +3,182 @@
     "nome": "Samuel",
     "nivel": 10,
     "posicao": "Goleiro",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Samuel.png"
   },
   {
     "nome": "Felipe Gol",
     "nivel": 7,
     "posicao": "Goleiro",
-    "status": "fora"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Felipe_Gol.png"
   },
   {
     "nome": "Anderson",
     "nivel": 10,
     "posicao": "Goleiro",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Anderson.png"
   },
   {
     "nome": "Renato",
     "nivel": 5,
     "posicao": "Goleiro",
-    "status": "dentro"
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Renato.png"
   },
   {
     "nome": "Thailan",
     "nivel": 7,
     "posicao": "Meia",
-    "status": "dentro"
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Thailan.png"
   },
   {
     "nome": "Carlinho",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "fora"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Carlinhos.png"
   },
   {
     "nome": "Renan",
     "nivel": 9,
     "posicao": "Meia",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Renan.png"
   },
   {
     "nome": "Flavio",
-    "nivel": 6,
+    "nivel": 5,
     "posicao": "Atacante",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Flavio.png"
   },
   {
     "nome": "Eduardo",
-    "nivel": 6,
+    "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Eduardo.png"
   },
   {
     "nome": "Kaio",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Kaio.png"
   },
   {
     "nome": "Douglas",
-    "nivel": 9,
+    "nivel": 8,
     "posicao": "Meia",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Douglas.png"
   },
   {
     "nome": "Thiago",
     "nivel": 8,
     "posicao": "Atacante",
-    "status": "pendente"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Thiago.png"
   },
   {
     "nome": "Vinicius",
     "nivel": 9,
     "posicao": "Zagueiro",
-    "status": "pendente"
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Vinicius.png"
   },
   {
     "nome": "Tadeu",
-    "nivel": 5,
+    "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Tadeu.png"
   },
   {
     "nome": "Cristian",
-    "nivel": 7,
+    "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Cristian.png"
   },
   {
     "nome": "Andre",
-    "nivel": 6,
+    "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Andre.png"
   },
   {
     "nome": "Tiago",
     "nivel": 6,
     "posicao": "Atacante",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Tiago.png"
   },
   {
     "nome": "Gabriel",
     "nivel": 9,
     "posicao": "Meia",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Gabriel.png"
   },
   {
     "nome": "Elvis",
     "nivel": 7,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Elvis.png"
   },
   {
     "nome": "Luiz Felipe",
     "nivel": 9,
     "posicao": "Atacante",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Luiz_felipe.png"
   },
   {
     "nome": "Marcelo",
     "nivel": 9,
     "posicao": "Zagueiro",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Marcelo.png"
   },
   {
     "nome": "Ozeas",
-    "nivel": 3,
+    "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "pendente"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Ozeas.png"
   },
   {
     "nome": "Bruno",
     "nivel": 7,
     "posicao": "Zagueiro",
-    "status": "fora"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Bruno.png"
   },
   {
     "nome": "Felipe",
     "nivel": 9,
     "posicao": "Meia",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Felipe.png"
   },
   {
     "nome": "Ramom",
-    "nivel": 8,
+    "nivel": 9,
     "posicao": "Meia",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Ramom.png"
   },
   {
     "nome": "Lucas",
     "nivel": 7,
     "posicao": "Meia",
-    "status": "dentro"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Lucas.png"
   }
 ]

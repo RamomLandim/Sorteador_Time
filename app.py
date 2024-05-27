@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import os
 import json
 import random
+import base64
 
 # *********************** MAIN *********************************
 
@@ -102,14 +103,15 @@ def realizar_sorteio():
           time1 = grupos[0]
           time2 = grupos[1]
 
+
           if len(time1)>6:
             time1.sort(key=lambda x: (x['nivel'], x['posicao']))
-            if time1[len(time1)-1]['posicao'] == 'Goleiro':
-              time2.append(time1[len(time1)-2])
-              time1.pop(len(time1)-2)
+            if time1[0]['posicao'] == 'Goleiro':
+              time2.append(time1[1])
+              time1.pop(1)
             else:
-              time2.append(time1[len(time1)-1])
-              time1.pop(len(time1)-1)
+              time2.append(time1[0])
+              time1.pop(0)
 
           somatorio_niveis_time1 = sum(jogador['nivel'] for jogador in time1)
           somatorio_niveis_time2 = sum(jogador['nivel'] for jogador in time2)
@@ -144,32 +146,26 @@ def realizar_sorteio():
             # Incrementar o índice
             index += 1
 
+          # Encontrando o menor tamanho de sub-array
+          menor_tamanho = min(len(sub_array) for sub_array in grupos)
+          maior_tamanho = max(len(sub_array) for sub_array in grupos)
+          # Encontrando todos os índices dos sub-arrays com o menor tamanho
+          indices_menores_arrays = [i for i, sub_array in enumerate(grupos) if len(sub_array) == menor_tamanho]
+          indices_maior_arrays = [i for i, sub_array in enumerate(grupos) if len(sub_array) == maior_tamanho]
+
+          # Imprimindo os resultados
+          print("O menor tamanho de sub-array é:", menor_tamanho)
+          print("Os índices dos sub-arrays com o menor tamanho são:", indices_menores_arrays)
+
+          print("O menor tamanho de sub-array é:", maior_tamanho)
+          print("Os índices dos sub-arrays com o menor tamanho são:", indices_maior_arrays)
+          
+          if menor_tamanho != 6:
+            grupos[indices_menores_arrays[0]],grupos[indices_maior_arrays[0]] = recalcula_grupo(grupos[indices_menores_arrays[0]],grupos[indices_maior_arrays[0]])
+
           time1 = grupos[0]
           time2 = grupos[1]
           time3 = grupos[2]
-
-          index = 0
-          while index <6:
-            if len(time1)<6:
-              time3.sort(key=lambda x: (x['nivel'], x['posicao']))
-              if time3[len(time3)-1]['posicao'] == 'Goleiro':
-                time1.append(time3[len(time3)-2])
-                time3.pop(len(time3)-2)
-              else:
-                time1.append(time3[len(time3)-1])
-                time3.pop(len(time3)-1)
-            index = len(time1)
-          
-          while index <6:
-            if len(time2)<6:
-              time3.sort(key=lambda x: (x['nivel'], x['posicao']))
-              if time3[len(time3)-1]['posicao'] == 'Goleiro':
-                time2.append(time3[len(time3)-2])
-                time3.pop(len(time3)-2)
-              else:
-                time2.append(time3[len(time3)-1])
-                time3.pop(len(time3)-1)
-            index = len(time2)
              
 
           somatorio_niveis_time1 = sum(jogador['nivel'] for jogador in time1)
@@ -212,56 +208,37 @@ def realizar_sorteio():
             # Incrementar o índice
             index += 1
           
+          # Encontrando o menor tamanho de sub-array
+          menor_tamanho = min(len(sub_array) for sub_array in grupos)
+          maior_tamanho = max(len(sub_array) for sub_array in grupos)
+          # Encontrando todos os índices dos sub-arrays com o menor tamanho
+          indices_menores_arrays = [i for i, sub_array in enumerate(grupos) if len(sub_array) == menor_tamanho]
+          indices_maior_arrays = [i for i, sub_array in enumerate(grupos) if len(sub_array) == maior_tamanho]
+
+          # Imprimindo os resultados
+          print("O menor tamanho de sub-array é:", menor_tamanho)
+          print("Os índices dos sub-arrays com o menor tamanho são:", indices_menores_arrays)
+
+          print("O maior tamanho de sub-array é:", maior_tamanho)
+          print("Os índices dos sub-arrays com o maior tamanho são:", indices_maior_arrays)
+          
+          print(len(jogadores_dentro))
+
+          num_times_novo = len(jogadores_dentro)/6
+          num_times_novo = int(num_times_novo)
+
+          
+          if menor_tamanho != 6:
+            if len(indices_menores_arrays)>1:
+              grupos[indices_menores_arrays[0]],grupos[indices_maior_arrays[1]] = recalcula_grupo(grupos[indices_menores_arrays[0]],grupos[indices_maior_arrays[1]])
+              grupos[indices_menores_arrays[1]],grupos[indices_maior_arrays[1]] = recalcula_grupo(grupos[indices_menores_arrays[1]],grupos[indices_maior_arrays[1]])
+            else:
+              grupos[indices_menores_arrays[0]],grupos[indices_maior_arrays[0]] = recalcula_grupo(grupos[indices_menores_arrays[0]],grupos[indices_maior_arrays[0]])
+
           time1 = grupos[0]
           time2 = grupos[1]
           time3 = grupos[2]
           time4 = grupos[3]
-          
-          time1, time2 = recalcula_grupo(time1,time2)
-          time2, time3 = recalcula_grupo(time2,time3)
-          time3, time4 = recalcula_grupo(time3,time4)
-
-          index = len(time1)
-          while index <6:
-            if len(time1)<6:
-              time4.sort(key=lambda x: (x['nivel'], x['posicao']))
-              if time4[len(time4)-1]['posicao'] == 'Goleiro':
-                time1.append(time4[len(time4)-2])
-                time4.pop(len(time4)-2)
-              else:
-                time1.append(time4[len(time4)-1])
-                time4.pop(len(time4)-1)
-            elif len(time1)>6:
-              time4.append(time1[len(time1)-1])
-              time1.pop(len(time1)-1)
-            index = len(time1)
-
-          index = len(time2)
-          while index <6:
-            if len(time2)<6:
-              time4.sort(key=lambda x: (x['nivel'], x['posicao']))
-              if time4[len(time4)-1]['posicao'] == 'Goleiro':
-                time2.append(time4[len(time4)-2])
-                time4.pop(len(time4)-2)
-              else:
-                time2.append(time4[len(time4)-1])
-                time4.pop(len(time4)-1)
-            elif len(time2)>6:
-              time4.append(time2[len(time2)-1])
-              time2.pop(len(time2)-1)
-            index = len(time2)
-
-          index = len(time3)
-          while index <6:
-            if len(time3)<6:
-              time4.sort(key=lambda x: (x['nivel'], x['posicao']))
-              if time4[len(time4)-1]['posicao'] == 'Goleiro':
-                time3.append(time4[len(time4)-2])
-                time4.pop(len(time4)-2)
-              else:
-                time3.append(time4[len(time4)-1])
-                time4.pop(len(time4)-1)
-            index = len(time2)
 
           somatorio_niveis_time1 = sum(jogador['nivel'] for jogador in time1)
           somatorio_niveis_time2 = sum(jogador['nivel'] for jogador in time2)
@@ -301,38 +278,22 @@ def realizar_sorteio():
 def recalcula_grupo(time1,time2):
   tamanho1 = len(time1)
   tamanho2 = len(time2)
+  i = 1
+  index = tamanho2 - tamanho1
+  print(time2[0]['posicao'])
+  print(time2[1]['posicao'])
 
-  if tamanho1 == tamanho2:
-    print("times com mesmo numero")
-
-  elif tamanho1 < tamanho2:
-    i = 0
-    index = tamanho2 - tamanho1
-    while i < index:
-      time2.sort(key=lambda x: (x['nivel'], x['posicao']))
-      if time2[len(time2)-1]['posicao'] == 'Goleiro':
-          time1.append(time2[len(time2)-2])
-          time2.pop(len(time2)-2)
-      else:
-          time1.append(time2[len(time2)-1])
-          time2.pop(len(time2)-1)
-      i+=1
-
-  elif  tamanho2 < tamanho1:
-    i = 0
-    index = tamanho1 - tamanho2
-    while i < index:
-      time1.sort(key=lambda x: (x['nivel'], x['posicao']))
-      if time1[len(time1)-1]['posicao'] == 'Goleiro':
-          time2.append(time1[len(time1)-2])
-          time1.pop(len(time1)-2)
-      else:
-          time2.append(time1[len(time1)-1])
-          time1.pop(len(time1)-1)
-      i+=1
+  while i < index:
+    print (i)
+    if time2[0]['posicao'] == 'Goleiro':
+        time1.append(time2[1])
+        time2.pop(1)
+    else:
+        time1.append(time2[0])
+        time2.pop(0)
+    i+=1
 
   return time1,time2
-
 
 
 def criar_grupos(jogadores, tamanho_grupo=6):
