@@ -10,7 +10,7 @@
     "nome": "Felipe Gol",
     "nivel": 7,
     "posicao": "Goleiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Felipe_Gol.png"
   },
   {
@@ -24,14 +24,14 @@
     "nome": "Renato",
     "nivel": 5,
     "posicao": "Goleiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Renato.png"
   },
   {
     "nome": "Thailan",
     "nivel": 7,
     "posicao": "Meia",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Thailan.png"
   },
   {
@@ -45,21 +45,21 @@
     "nome": "Renan",
     "nivel": 9,
     "posicao": "Meia",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Renan.png"
   },
   {
     "nome": "Flavio",
     "nivel": 5,
     "posicao": "Atacante",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Flavio.png"
   },
   {
     "nome": "Eduardo",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Eduardo.png"
   },
   {
@@ -73,14 +73,14 @@
     "nome": "Douglas",
     "nivel": 8,
     "posicao": "Meia",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Douglas.png"
   },
   {
     "nome": "Thiago",
     "nivel": 8,
     "posicao": "Atacante",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Thiago.png"
   },
   {
@@ -101,14 +101,14 @@
     "nome": "Cristian",
     "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Cristian.png"
   },
   {
     "nome": "Andre",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Andre.png"
   },
   {
