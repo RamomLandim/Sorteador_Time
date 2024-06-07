@@ -74,14 +74,17 @@ def realizar_sorteio():
           num_times = 2
         elif numero_jogadores >10 and numero_jogadores <=15:
           num_times = 3
-        elif numero_jogadores >15:
+        elif numero_jogadores >15 and numero_jogadores<=20:
            num_times = 4
+        else:
+           num_times=5
 
         # Dividir jogadores em mnos times, garantindo equilíbrio nas notas e posições
         time1 = ""
         time2 = ""
         time3 = ""
         time4 = ""
+        time5 = ""
         
         somas = [0 for _ in range(num_times)]
         if num_times == 2:
@@ -99,18 +102,39 @@ def realizar_sorteio():
             # Incrementar o índice
             index += 1
 
+          if len(jogadores_dentro)%6!=0:
+            num_times_novo = len(jogadores_dentro)/6
+            num_times_teste = int(num_times_novo)
+          else: 
+            num_times_novo = len(jogadores_dentro)/6
+            num_times_teste = int(num_times_novo)-1
+
+          print(num_times_teste)
+          i=0
+          while i < num_times_teste:
+            j=(len(grupos[i]))
+            if len(grupos[i])<6:
+              while j!=6:
+                if grupos[num_times_teste][0]['posicao'] == 'Goleiro':
+                    grupos[i].append(grupos[num_times_teste][1])
+                    grupos[num_times_teste].pop(1)
+                else:
+                    grupos[i].append(grupos[num_times_teste][0])
+                    grupos[num_times_teste].pop(0)
+                j+=1
+            elif len(grupos[i])>6:
+              while j!=6:
+                if grupos[num_times_teste][0]['posicao'] == 'Goleiro':
+                    grupos[i].append(grupos[num_times_teste][1])
+                    grupos[num_times_teste].pop(1)
+                else:
+                    grupos[i].append(grupos[num_times_teste][0])
+                    grupos[num_times_teste].pop(0)
+                j-=1 
+            i+=1
+
           time1 = grupos[0]
           time2 = grupos[1]
-
-
-          if len(time1)>6:
-            time1.sort(key=lambda x: (x['nivel'], x['posicao']))
-            if time1[0]['posicao'] == 'Goleiro':
-              time2.append(time1[1])
-              time1.pop(1)
-            else:
-              time2.append(time1[0])
-              time1.pop(0)
 
           somatorio_niveis_time1 = sum(jogador['nivel'] for jogador in time1)
           somatorio_niveis_time2 = sum(jogador['nivel'] for jogador in time2)
@@ -196,7 +220,7 @@ def realizar_sorteio():
           "porcentagem_meia_time3": porcentagem_meia_time3,
           "porcentagem_atacante_time3": porcentagem_atacante_time3
           }
-        else:
+        elif num_times==4:
           somas = [0 for _ in range(4)]
           grupos = [[] for _ in range(4)]
           
@@ -214,7 +238,6 @@ def realizar_sorteio():
 
           num_times_novo = len(jogadores_dentro)/6
           num_times_teste = int(num_times_novo)
-          
 
           i=0
           while i < num_times_teste:
@@ -228,7 +251,20 @@ def realizar_sorteio():
                     grupos[i].append(grupos[num_times_teste][0])
                     grupos[num_times_teste].pop(0)
                 j+=1
+            elif len(grupos[i])>6:
+              while j!=6:
+                if grupos[num_times_teste][0]['posicao'] == 'Goleiro':
+                    grupos[i].append(grupos[num_times_teste][1])
+                    grupos[num_times_teste].pop(1)
+                else:
+                    grupos[i].append(grupos[num_times_teste][0])
+                    grupos[num_times_teste].pop(0)
+                j-=1 
             i+=1
+
+          if contem_goleiro(grupos[2])!=True:
+            grupos[3].append(grupos[2][len(grupos[2])-1])
+            grupos[2].pop(len(grupos[2])-1)
 
           time1 = grupos[0]
           time2 = grupos[1]
@@ -267,6 +303,97 @@ def realizar_sorteio():
           "porcentagem_meia_time4": porcentagem_meia_time4,
           "porcentagem_atacante_time4": porcentagem_atacante_time4
           }
+        elif num_times==5:
+          somas = [0 for _ in range(5)]
+          grupos = [[] for _ in range(5)]
+          
+          index = 0
+          while index < len(jogadores_dentro):
+
+            indice_grupo = somas.index(min(somas))
+
+            pessoa = jogadores_dentro[index]
+            grupos[indice_grupo].append(pessoa)
+            somas[indice_grupo] += pessoa["nivel"]
+
+            index += 1
+        
+
+          num_times_novo = len(jogadores_dentro)/6
+          num_times_teste = int(num_times_novo)
+
+          i=0
+          while i < num_times_teste:
+            j=(len(grupos[i]))
+            if len(grupos[i])<6:
+              while j!=6:
+                if grupos[num_times_teste][0]['posicao'] == 'Goleiro':
+                    grupos[i].append(grupos[num_times_teste][1])
+                    grupos[num_times_teste].pop(1)
+                else:
+                    grupos[i].append(grupos[num_times_teste][0])
+                    grupos[num_times_teste].pop(0)
+                j+=1
+            elif len(grupos[i])>6:
+              while j!=6:
+                if grupos[num_times_teste][0]['posicao'] == 'Goleiro':
+                    grupos[i].append(grupos[num_times_teste][1])
+                    grupos[num_times_teste].pop(1)
+                else:
+                    grupos[i].append(grupos[num_times_teste][0])
+                    grupos[num_times_teste].pop(0)
+                j-=1 
+            i+=1
+
+          if contem_goleiro(grupos[2])!=True:
+            grupos[3].append(grupos[2][len(grupos[2])-1])
+            grupos[2].pop(len(grupos[2])-1)
+
+          time1 = grupos[0]
+          time2 = grupos[1]
+          time3 = grupos[2]
+          time4 = grupos[3]
+          time5 = grupos[4]
+
+          somatorio_niveis_time1 = sum(jogador['nivel'] for jogador in time1)
+          somatorio_niveis_time2 = sum(jogador['nivel'] for jogador in time2)
+          somatorio_niveis_time3 = sum(jogador['nivel'] for jogador in time3)
+          somatorio_niveis_time4 = sum(jogador['nivel'] for jogador in time4)
+          somatorio_niveis_time5 = sum(jogador['nivel'] for jogador in time5)
+
+          porcentagem_goleiros_zagueiros_time1, porcentagem_meia_time1, porcentagem_atacante_time1 = calculo_time(time1)
+          porcentagem_goleiros_zagueiros_time2, porcentagem_meia_time2, porcentagem_atacante_time2 = calculo_time(time2)
+          porcentagem_goleiros_zagueiros_time3, porcentagem_meia_time3, porcentagem_atacante_time3 = calculo_time(time3)
+          porcentagem_goleiros_zagueiros_time4, porcentagem_meia_time4, porcentagem_atacante_time4 = calculo_time(time4)
+          porcentagem_goleiros_zagueiros_time5, porcentagem_meia_time5, porcentagem_atacante_time5 = calculo_time(time5)
+
+          times_sorteados = {
+          "time1": time1,
+          "time2": time2,
+          "time3": time3,
+          "time4": time4,
+          "time5": time5,
+          "somatorio_niveis_time1": somatorio_niveis_time1,
+          "somatorio_niveis_time2": somatorio_niveis_time2,
+          "somatorio_niveis_time3": somatorio_niveis_time3,
+          "somatorio_niveis_time4": somatorio_niveis_time4,
+          "somatorio_niveis_time5": somatorio_niveis_time5,
+          "porcentagem_goleiros_zagueiros_time1": porcentagem_goleiros_zagueiros_time1,
+          "porcentagem_meia_time1": porcentagem_meia_time1,
+          "porcentagem_atacante_time1": porcentagem_atacante_time1,
+          "porcentagem_goleiros_zagueiros_time2": porcentagem_goleiros_zagueiros_time2,
+          "porcentagem_meia_time2": porcentagem_meia_time2,
+          "porcentagem_atacante_time2": porcentagem_atacante_time2,
+          "porcentagem_goleiros_zagueiros_time3": porcentagem_goleiros_zagueiros_time3, 
+          "porcentagem_meia_time3": porcentagem_meia_time3,
+          "porcentagem_atacante_time3": porcentagem_atacante_time3,
+          "porcentagem_goleiros_zagueiros_time4": porcentagem_goleiros_zagueiros_time4, 
+          "porcentagem_meia_time4": porcentagem_meia_time4,
+          "porcentagem_atacante_time4": porcentagem_atacante_time4,
+          "porcentagem_goleiros_zagueiros_time5": porcentagem_goleiros_zagueiros_time5, 
+          "porcentagem_meia_time5": porcentagem_meia_time5,
+          "porcentagem_atacante_time5": porcentagem_atacante_time5
+          }
 
         return times_sorteados, None, num_times
 
@@ -281,6 +408,12 @@ def criar_grupos(jogadores, tamanho_grupo=6):
         niveis_grupos[indice_melhor_grupo] += jogador["nivel"]
 
     return grupos
+
+def contem_goleiro(grupos):
+      for item in grupos:
+          if item.get("posicao") == "Goleiro":
+              return True
+      return False
 
 def calculo_time(time):
    # Calcular somatório dos níveis para cada setor do Time 1
@@ -320,6 +453,13 @@ def sortear():
   elif num_times == 4:
     if times_sorteados:
       return render_template('resultado_4.html', resultado_sorteio=times_sorteados)
+    else:
+      # print("Erro no sorteio:", mensagem_erro)
+      return render_template('erro_sorteio.html', mensagem_erro=mensagem_erro)
+  
+  elif num_times == 5:
+    if times_sorteados:
+      return render_template('resultado_5.html', resultado_sorteio=times_sorteados)
     else:
       # print("Erro no sorteio:", mensagem_erro)
       return render_template('erro_sorteio.html', mensagem_erro=mensagem_erro)

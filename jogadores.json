@@ -45,42 +45,42 @@
     "nome": "Renan",
     "nivel": 9,
     "posicao": "Meia",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Renan.png"
   },
   {
     "nome": "Flavio",
     "nivel": 5,
     "posicao": "Atacante",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Flavio.png"
   },
   {
     "nome": "Eduardo",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Eduardo.png"
   },
   {
     "nome": "Kaio",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Kaio.png"
   },
   {
     "nome": "Douglas",
     "nivel": 8,
     "posicao": "Meia",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Douglas.png"
   },
   {
     "nome": "Thiago",
     "nivel": 8,
     "posicao": "Atacante",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Thiago.png"
   },
   {
@@ -94,15 +94,15 @@
     "nome": "Tadeu",
     "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Tadeu.png"
   },
   {
-    "nome": "Cristian",
+    "nome": "Patrick",
     "nivel": 6,
     "posicao": "Zagueiro",
     "status": "dentro",
-    "imagem_url": "/static/Cartas/Cristian.png"
+    "imagem_url": "/static/Cartas/Patrick.png"
   },
   {
     "nome": "Andre",
@@ -122,7 +122,7 @@
     "nome": "Gabriel",
     "nivel": 9,
     "posicao": "Meia",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Gabriel.png"
   },
   {
@@ -143,21 +143,21 @@
     "nome": "Marcelo",
     "nivel": 9,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Marcelo.png"
   },
   {
     "nome": "Ozeas",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Ozeas.png"
   },
   {
     "nome": "Bruno",
     "nivel": 7,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Bruno.png"
   },
   {
@@ -169,7 +169,7 @@
   },
   {
     "nome": "Ramom",
-    "nivel": 9,
+    "nivel": 8,
     "posicao": "Meia",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Ramom.png"
