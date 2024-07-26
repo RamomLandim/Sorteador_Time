@@ -3,14 +3,14 @@
     "nome": "Samuel",
     "nivel": 10,
     "posicao": "Goleiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Samuel.png"
   },
   {
     "nome": "Felipe Gol",
     "nivel": 7,
     "posicao": "Goleiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Felipe_Gol.png"
   },
   {
@@ -24,14 +24,14 @@
     "nome": "Renato",
     "nivel": 5,
     "posicao": "Goleiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Renato.png"
   },
   {
     "nome": "Rafael",
     "nivel": 7,
     "posicao": "Goleiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Rafael_Gol.png"
   },
   {
@@ -73,7 +73,7 @@
     "nome": "Kaio",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "pendente",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Kaio.png"
   },
   {
@@ -101,7 +101,7 @@
     "nome": "Tadeu",
     "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "pendente",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Tadeu.png"
   },
   {
@@ -136,7 +136,7 @@
     "nome": "Elvis",
     "nivel": 7,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Elvis.png"
   },
   {
@@ -150,21 +150,21 @@
     "nome": "Marcelo",
     "nivel": 9,
     "posicao": "Zagueiro",
-    "status": "pendente",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Marcelo.png"
   },
   {
     "nome": "Ozeas",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "pendente",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Ozeas.png"
   },
   {
     "nome": "Bruno",
     "nivel": 7,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Bruno.png"
   },
   {
@@ -185,7 +185,7 @@
     "nome": "Lucas",
     "nivel": 7,
     "posicao": "Meia",
-    "status": "pendente",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Lucas.png"
   }
 ]
