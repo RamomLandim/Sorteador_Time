@@ -187,5 +187,18 @@
     "posicao": "Meia",
     "status": "fora",
     "imagem_url": "/static/Cartas/Lucas.png"
+  },{
+    "nome": "Patrick_novo",
+    "nivel": 9,
+    "posicao": "Meia",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Patrick_novo.png"
+  },
+  {
+    "nome": "Guilherme",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Guilherme.png"
   }
 ]
