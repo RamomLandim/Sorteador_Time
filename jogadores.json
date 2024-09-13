@@ -8,7 +8,7 @@
   },
   {
     "nome": "Felipe Gol",
-    "nivel": 7,
+    "nivel": 6.5,
     "posicao": "Goleiro",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Felipe_Gol.png"
@@ -21,13 +21,6 @@
     "imagem_url": "/static/Cartas/Anderson.png"
   },
   {
-    "nome": "Renato",
-    "nivel": 5,
-    "posicao": "Goleiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Renato.png"
-  },
-  {
     "nome": "Rafael",
     "nivel": 7,
     "posicao": "Goleiro",
@@ -38,26 +31,26 @@
     "nome": "Thailan",
     "nivel": 7,
     "posicao": "Meia",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Thailan.png"
   },
   {
     "nome": "Carlinho",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Carlinhos.png"
   },
   {
     "nome": "Renan",
-    "nivel": 9,
+    "nivel": 8.5,
     "posicao": "Meia",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Renan.png"
   },
   {
     "nome": "Flavio",
-    "nivel": 5,
+    "nivel": 4.5,
     "posicao": "Atacante",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Flavio.png"
@@ -70,32 +63,18 @@
     "imagem_url": "/static/Cartas/Eduardo.png"
   },
   {
-    "nome": "Kaio",
-    "nivel": 5,
-    "posicao": "Zagueiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Kaio.png"
-  },
-  {
     "nome": "Douglas",
-    "nivel": 8,
+    "nivel": 7,
     "posicao": "Meia",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Douglas.png"
   },
   {
     "nome": "Thiago",
-    "nivel": 8,
+    "nivel": 7,
     "posicao": "Atacante",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Thiago.png"
-  },
-  {
-    "nome": "Vinicius",
-    "nivel": 9,
-    "posicao": "Zagueiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Vinicius.png"
   },
   {
     "nome": "Tadeu",
@@ -105,15 +84,8 @@
     "imagem_url": "/static/Cartas/Tadeu.png"
   },
   {
-    "nome": "Patrick",
-    "nivel": 6,
-    "posicao": "Zagueiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Patrick.png"
-  },
-  {
     "nome": "Andre",
-    "nivel": 5,
+    "nivel": 5.5,
     "posicao": "Zagueiro",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Andre.png"
@@ -136,7 +108,7 @@
     "nome": "Elvis",
     "nivel": 7,
     "posicao": "Zagueiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Elvis.png"
   },
   {
@@ -148,7 +120,7 @@
   },
   {
     "nome": "Marcelo",
-    "nivel": 9,
+    "nivel": 8,
     "posicao": "Zagueiro",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Marcelo.png"
@@ -157,14 +129,14 @@
     "nome": "Ozeas",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Ozeas.png"
   },
   {
     "nome": "Bruno",
-    "nivel": 7,
+    "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Bruno.png"
   },
   {
@@ -185,11 +157,12 @@
     "nome": "Lucas",
     "nivel": 7,
     "posicao": "Meia",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Lucas.png"
-  },{
+  },
+  {
     "nome": "Patrick_novo",
-    "nivel": 9,
+    "nivel": 7,
     "posicao": "Meia",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Patrick_novo.png"
@@ -200,5 +173,40 @@
     "posicao": "Meia",
     "status": "fora",
     "imagem_url": "/static/Cartas/Guilherme.png"
+  },
+  {
+    "nome": "Vitor",
+    "nivel": 5,
+    "posicao": "Zagueiro",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Vitor.png"
+  },
+  {
+    "nome": "Renato",
+    "nivel": 5,
+    "posicao": "Goleiro",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Renato.png"
+  },
+  {
+    "nome": "Kaio",
+    "nivel": 5,
+    "posicao": "Zagueiro",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Kaio.png"
+  },
+  {
+    "nome": "Vinicius",
+    "nivel": 9,
+    "posicao": "Zagueiro",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Vinicius.png"
+  },
+  {
+    "nome": "Patrick",
+    "nivel": 6,
+    "posicao": "Zagueiro",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Patrick.png"
   }
 ]
