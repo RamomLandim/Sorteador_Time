@@ -17,7 +17,7 @@
     "nome": "Anderson",
     "nivel": 10,
     "posicao": "Goleiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Anderson.png"
   },
   {
@@ -31,14 +31,14 @@
     "nome": "Thailan",
     "nivel": 7,
     "posicao": "Meia",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Thailan.png"
   },
   {
     "nome": "Carlinho",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Carlinhos.png"
   },
   {
@@ -59,7 +59,7 @@
     "nome": "Eduardo",
     "nivel": 5,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Eduardo.png"
   },
   {
@@ -101,7 +101,7 @@
     "nome": "Gabriel",
     "nivel": 9,
     "posicao": "Meia",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Gabriel.png"
   },
   {
@@ -122,7 +122,7 @@
     "nome": "Marcelo",
     "nivel": 8,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Marcelo.png"
   },
   {
@@ -180,6 +180,13 @@
     "posicao": "Zagueiro",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Vitor.png"
+  },
+  {
+    "nome": "Gabriel_novo",
+    "nivel": 6.5,
+    "posicao": "Meia",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Gabriel_novo.png"
   },
   {
     "nome": "Renato",
