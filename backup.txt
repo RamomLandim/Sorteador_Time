@@ -1,0 +1,219 @@
+[
+  {
+    "nome": "Samuel",
+    "nivel": 9,
+    "posicao": "Goleiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Samuel.png"
+  },
+  {
+    "nome": "Felipe Gol",
+    "nivel": 6,
+    "posicao": "Goleiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Felipe_Gol.png"
+  },
+  {
+    "nome": "Anderson",
+    "nivel": 9,
+    "posicao": "Goleiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Anderson.png"
+  },
+  {
+    "nome": "Rafael",
+    "nivel": 7,
+    "posicao": "Goleiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Rafael_Gol.png"
+  },
+  {
+    "nome": "Thailan",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Thailan.png"
+  },
+  {
+    "nome": "Carlinho",
+    "nivel": 6,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Carlinhos.png"
+  },
+  {
+    "nome": "Renan",
+    "nivel": 8.5,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Renan.png"
+  },
+  {
+    "nome": "Flavio",
+    "nivel": 5,
+    "posicao": "Atacante",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Flavio.png"
+  },
+  {
+    "nome": "Eduardo",
+    "nivel": 5,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Eduardo.png"
+  },
+  {
+    "nome": "Douglas",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Douglas.png"
+  },
+  {
+    "nome": "Thiago",
+    "nivel": 6,
+    "posicao": "Atacante",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Thiago.png"
+  },
+  {
+    "nome": "Tadeu",
+    "nivel": 6,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Tadeu.png"
+  },
+  {
+    "nome": "Andre",
+    "nivel": 6,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Andre.png"
+  },
+  {
+    "nome": "Tiago",
+    "nivel": 7,
+    "posicao": "Atacante",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Tiago.png"
+  },
+  {
+    "nome": "Gabriel",
+    "nivel": 9,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Gabriel.png"
+  },
+  {
+    "nome": "Elvis",
+    "nivel": 7,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Elvis.png"
+  },
+  {
+    "nome": "Luiz Felipe",
+    "nivel": 9,
+    "posicao": "Atacante",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Luiz_felipe.png"
+  },
+  {
+    "nome": "Ozeas",
+    "nivel": 5,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Ozeas.png"
+  },
+  {
+    "nome": "Bruno",
+    "nivel": 7,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Bruno.png"
+  },
+  {
+    "nome": "Felipe",
+    "nivel": 9,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Felipe.png"
+  },
+  {
+    "nome": "Ramom",
+    "nivel": 8,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Ramom.png"
+  },
+  {
+    "nome": "Lucas",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Lucas.png"
+  },
+  {
+    "nome": "Patrick_novo",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Patrick_novo.png"
+  },
+  {
+    "nome": "Guilherme",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Guilherme.png"
+  },
+  {
+    "nome": "Vitor",
+    "nivel": 4,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Vitor.png"
+  },
+  {
+    "nome": "Gabriel_novo",
+    "nivel": 6,
+    "posicao": "Meia",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Gabriel_novo.png"
+  },
+  {
+    "nome": "Renato",
+    "nivel": 5,
+    "posicao": "Goleiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Renato.png"
+  },
+  {
+    "nome": "Kaio",
+    "nivel": 5,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Kaio.png"
+  },
+  {
+    "nome": "Vinicius",
+    "nivel": 9,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Vinicius.png"
+  },
+  {
+    "nome": "Patrick",
+    "nivel": 6,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Patrick.png"
+  },
+  {
+    "nome": "Marcelo",
+    "nivel": 8,
+    "posicao": "Zagueiro",
+    "status": "pendente",
+    "imagem_url": "/static/Cartas/Marcelo.png"
+  }
+]

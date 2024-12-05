@@ -251,7 +251,7 @@ def realizar_sorteio():
                     grupos[i].append(grupos[num_times_teste][0])
                     grupos[num_times_teste].pop(0)
                 j+=1
-            elif len(grupos[i])>6:
+            elif len(grupos[i])>5:
               while j!=6:
                 if grupos[num_times_teste][0]['posicao'] == 'Goleiro':
                     grupos[i].append(grupos[num_times_teste][1])

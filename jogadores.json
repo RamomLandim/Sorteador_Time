@@ -1,108 +1,45 @@
 [
   {
-    "nome": "Samuel",
-    "nivel": 10,
-    "posicao": "Goleiro",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Samuel.png"
-  },
-  {
-    "nome": "Felipe Gol",
-    "nivel": 6.5,
-    "posicao": "Goleiro",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Felipe_Gol.png"
+    "nome": "Andre",
+    "nivel": 6,
+    "posicao": "Zagueiro",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Andre.png"
   },
   {
     "nome": "Anderson",
-    "nivel": 10,
+    "nivel": 9,
     "posicao": "Goleiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Anderson.png"
   },
   {
-    "nome": "Rafael",
+    "nome": "Bruno",
     "nivel": 7,
-    "posicao": "Goleiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Rafael_Gol.png"
-  },
-  {
-    "nome": "Thailan",
-    "nivel": 7,
-    "posicao": "Meia",
+    "posicao": "Zagueiro",
     "status": "dentro",
-    "imagem_url": "/static/Cartas/Thailan.png"
+    "imagem_url": "/static/Cartas/Bruno.png"
   },
   {
     "nome": "Carlinho",
-    "nivel": 5,
+    "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Carlinhos.png"
   },
   {
-    "nome": "Renan",
-    "nivel": 8.5,
-    "posicao": "Meia",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Renan.png"
-  },
-  {
-    "nome": "Flavio",
-    "nivel": 4.5,
-    "posicao": "Atacante",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Flavio.png"
-  },
-  {
-    "nome": "Eduardo",
-    "nivel": 5,
-    "posicao": "Zagueiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Eduardo.png"
-  },
-  {
     "nome": "Douglas",
-    "nivel": 7,
+    "nivel": 6.5,
     "posicao": "Meia",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Douglas.png"
   },
   {
-    "nome": "Thiago",
-    "nivel": 7,
-    "posicao": "Atacante",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Thiago.png"
-  },
-  {
-    "nome": "Tadeu",
-    "nivel": 6,
-    "posicao": "Zagueiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Tadeu.png"
-  },
-  {
-    "nome": "Andre",
-    "nivel": 5.5,
+    "nome": "Eduardo",
+    "nivel": 5,
     "posicao": "Zagueiro",
     "status": "dentro",
-    "imagem_url": "/static/Cartas/Andre.png"
-  },
-  {
-    "nome": "Tiago",
-    "nivel": 6,
-    "posicao": "Atacante",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Tiago.png"
-  },
-  {
-    "nome": "Gabriel",
-    "nivel": 9,
-    "posicao": "Meia",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Gabriel.png"
+    "imagem_url": "/static/Cartas/Eduardo.png"
   },
   {
     "nome": "Elvis",
@@ -112,18 +49,60 @@
     "imagem_url": "/static/Cartas/Elvis.png"
   },
   {
-    "nome": "Luiz Felipe",
+    "nome": "Felipe",
     "nivel": 9,
+    "posicao": "Meia",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Felipe.png"
+  },
+  {
+    "nome": "Felipe Gol",
+    "nivel": 6,
+    "posicao": "Goleiro",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Felipe_Gol.png"
+  },
+  {
+    "nome": "Flavio",
+    "nivel": 5,
+    "posicao": "Atacante",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Flavio.png"
+  },
+  {
+    "nome": "Gabriel",
+    "nivel": 9,
+    "posicao": "Meia",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Gabriel.png"
+  },
+  {
+    "nome": "Gabriel_novo",
+    "nivel": 6,
+    "posicao": "Meia",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Gabriel_novo.png"
+  },
+  {
+    "nome": "Guilherme",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Guilherme.png"
+  },
+  {
+    "nome": "Joao Paulo",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Joao_Paulo.png"
+  },
+  {
+    "nome": "Luiz Felipe",
+    "nivel": 8.5,
     "posicao": "Atacante",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Luiz_felipe.png"
-  },
-  {
-    "nome": "Marcelo",
-    "nivel": 8,
-    "posicao": "Zagueiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Marcelo.png"
   },
   {
     "nome": "Ozeas",
@@ -133,87 +112,87 @@
     "imagem_url": "/static/Cartas/Ozeas.png"
   },
   {
-    "nome": "Bruno",
-    "nivel": 6,
-    "posicao": "Zagueiro",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Bruno.png"
+    "nome": "Patrick_novo",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Patrick_novo.png"
   },
   {
-    "nome": "Felipe",
-    "nivel": 9,
-    "posicao": "Meia",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Felipe.png"
+    "nome": "Rafael",
+    "nivel": 6,
+    "posicao": "Zagueiro",
+    "status": "fora",
+    "imagem_url": "/static/Cartas/Rafael_Gol.png"
   },
   {
     "nome": "Ramom",
-    "nivel": 9,
+    "nivel": 8,
     "posicao": "Meia",
     "status": "dentro",
     "imagem_url": "/static/Cartas/Ramom.png"
   },
   {
-    "nome": "Lucas",
-    "nivel": 7,
+    "nome": "Renan",
+    "nivel": 8.5,
     "posicao": "Meia",
     "status": "dentro",
-    "imagem_url": "/static/Cartas/Lucas.png"
-  },
-  {
-    "nome": "Patrick_novo",
-    "nivel": 7,
-    "posicao": "Meia",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Patrick_novo.png"
-  },
-  {
-    "nome": "Guilherme",
-    "nivel": 7,
-    "posicao": "Meia",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Guilherme.png"
-  },
-  {
-    "nome": "Vitor",
-    "nivel": 5,
-    "posicao": "Zagueiro",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Vitor.png"
-  },
-  {
-    "nome": "Gabriel_novo",
-    "nivel": 6.5,
-    "posicao": "Meia",
-    "status": "dentro",
-    "imagem_url": "/static/Cartas/Gabriel_novo.png"
+    "imagem_url": "/static/Cartas/Renan.png"
   },
   {
     "nome": "Renato",
     "nivel": 5,
     "posicao": "Goleiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Renato.png"
   },
   {
-    "nome": "Kaio",
-    "nivel": 5,
-    "posicao": "Zagueiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Kaio.png"
-  },
-  {
-    "nome": "Vinicius",
+    "nome": "Samuel",
     "nivel": 9,
-    "posicao": "Zagueiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Vinicius.png"
+    "posicao": "Goleiro",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Samuel.png"
   },
   {
-    "nome": "Patrick",
+    "nome": "Tadeu",
+    "nivel": 4.5,
+    "posicao": "Zagueiro",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Tadeu.png"
+  },
+  {
+    "nome": "Thailan",
+    "nivel": 7,
+    "posicao": "Meia",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Thailan.png"
+  },
+  {
+    "nome": "Thiago",
+    "nivel": 6,
+    "posicao": "Atacante",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Thiago.png"
+  },
+  {
+    "nome": "Tiago",
+    "nivel": 6.5,
+    "posicao": "Atacante",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Tiago.png"
+  },
+  {
+    "nome": "Vitor",
     "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "fora",
-    "imagem_url": "/static/Cartas/Patrick.png"
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Vitor.png"
+  },
+  {
+    "nome": "Marcelo",
+    "nivel": 8,
+    "posicao": "Zagueiro",
+    "status": "dentro",
+    "imagem_url": "/static/Cartas/Marcelo.png"
   }
 ]
