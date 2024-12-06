@@ -112,7 +112,7 @@
 
     <!-- Time 1 -->
     <section>
-        <h2>Time 1</h2>
+        <h2 class="grid-main-heading">Time 1</h2>
         <!-- <h3>Somatório de Níveis: {{ resultado_sorteio.somatorio_niveis_time1 }}</h3> -->
         <div class="grid">
             {% for jogador in resultado_sorteio.time1 | sort(attribute='posicao') %}
@@ -129,7 +129,7 @@
 
     <!-- Time 2 -->
     <section>
-        <h2>Time 2</h2>
+        <h2 class="grid-main-heading">Time 2</h2>
         <!-- <h3>Somatório de Níveis: {{ resultado_sorteio.somatorio_niveis_time2 }}</h3> -->
         <div class="grid">
             {% for jogador in resultado_sorteio.time2 | sort(attribute='posicao') %}
@@ -141,40 +141,7 @@
             {% endfor %}
         </div>
     </section>
-    
-    <section id="grid-one" class="main-content section">
-        <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">Time 3</h2>
-            <!-- <h3 class="soma">Somatório de Níveis: {{ resultado_sorteio.somatorio_niveis_time3 }}</h3> -->
-            <div class="grid">
-                {% for jogador in resultado_sorteio.time3 | sort(attribute='posicao') %}
-                    <article>
-                        <div class="gallery-img">
-                            <img src={{jogador.imagem_url}} alt="random imagem frons unsplash">
-                        </div>
-                    </article>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-  
-    <hr>
 
-    <section id="grid-one" class="main-content section">
-        <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">Time 4</h2>
-            <!-- <h3 class="soma">Somatório de Níveis: {{ resultado_sorteio.somatorio_niveis_time4 }}</h3> -->
-            <div class="grid">
-                {% for jogador in resultado_sorteio.time4 | sort(attribute='posicao') %}
-                    <article>
-                        <div class="gallery-img">
-                            <img src={{jogador.imagem_url}} alt="random imagem frons unsplash">
-                        </div>
-                    </article>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
     <br>
     <br>
     <br>
@@ -197,9 +164,6 @@
     <br>
     <br>
     <br>
-</body>
-
-</html>
 
 </body>
 

@@ -438,7 +438,7 @@ def sortear():
 
   if num_times == 2:
     if times_sorteados:
-      return render_template('resultado.html', resultado_sorteio=times_sorteados)
+      return render_template('resultado_1.html', resultado_sorteio=times_sorteados)
     else:
       # print("Erro no sorteio:", mensagem_erro)
       return render_template('erro_sorteio.html', mensagem_erro=mensagem_erro)

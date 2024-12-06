@@ -3,7 +3,7 @@
     "nome": "Andre",
     "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Andre.png"
   },
   {
@@ -52,7 +52,7 @@
     "nome": "Felipe",
     "nivel": 9,
     "posicao": "Meia",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Felipe.png"
   },
   {
@@ -80,7 +80,7 @@
     "nome": "Gabriel_novo",
     "nivel": 6,
     "posicao": "Meia",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Gabriel_novo.png"
   },
   {
@@ -94,14 +94,14 @@
     "nome": "Joao Paulo",
     "nivel": 7,
     "posicao": "Meia",
-    "status": "fora",
+    "status": "dentro",
     "imagem_url": "/static/Cartas/Joao_Paulo.png"
   },
   {
     "nome": "Luiz Felipe",
     "nivel": 8.5,
     "posicao": "Atacante",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Luiz_felipe.png"
   },
   {
@@ -129,70 +129,70 @@
     "nome": "Ramom",
     "nivel": 8,
     "posicao": "Meia",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Ramom.png"
   },
   {
     "nome": "Renan",
     "nivel": 8.5,
     "posicao": "Meia",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Renan.png"
   },
   {
     "nome": "Renato",
     "nivel": 5,
     "posicao": "Goleiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Renato.png"
   },
   {
     "nome": "Samuel",
     "nivel": 9,
     "posicao": "Goleiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Samuel.png"
   },
   {
     "nome": "Tadeu",
     "nivel": 4.5,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Tadeu.png"
   },
   {
     "nome": "Thailan",
     "nivel": 7,
     "posicao": "Meia",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Thailan.png"
   },
   {
     "nome": "Thiago",
     "nivel": 6,
     "posicao": "Atacante",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Thiago.png"
   },
   {
     "nome": "Tiago",
     "nivel": 6.5,
     "posicao": "Atacante",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Tiago.png"
   },
   {
     "nome": "Vitor",
     "nivel": 6,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Vitor.png"
   },
   {
     "nome": "Marcelo",
     "nivel": 8,
     "posicao": "Zagueiro",
-    "status": "dentro",
+    "status": "fora",
     "imagem_url": "/static/Cartas/Marcelo.png"
   }
 ]
